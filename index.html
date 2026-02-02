@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Profil – DataPassport</title>
+    <style>
+    .profile-photo {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    .profile-photo img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #c9b37e;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f5f5f5;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        header {
+            background-color: #0b0b0b;
+            color: #f5f5f5;
+            padding: 150px 20px 120px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        header h2 {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            color: #aaa;
+        }
+        header p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        header .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #bfa45a;
+            color: #0b0b0b;
+            font-weight: bold;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        header .btn:hover {
+            background-color: #d4ba6a;
+        }
+
+        section {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 40px;
+            margin-bottom: 30px;
+            color: #0b0b0b;
+        }
+        section p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 60px;
+        }
+        .feature {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            flex: 1 1 250px;
+            max-width: 300px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .feature:hover { transform: translateY(-5px); }
+        .feature h3 { font-size: 22px; margin-bottom: 15px; color: #bfa45a; }
+        .feature p { font-size: 16px; color: #555; }
+
+        footer {
+            background-color: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            header h1 { font-size: 36px; }
+            header h2 { font-size: 20px; }
+            .features { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Samy Nettour</h1>
+            <h2>Etudiant en Droit – Panthéon Sorbonne | LegalTech & Souveraineté des données</h2>
+
+            <div class="profile-photo">
+                <img src="photo.jpg" alt="Portrait">
+            </div>
+
+            <p>
+                Souveraineté des données / Protection de l'identité. 
+                Je développe des projets à l’intersection du juridique et de la tech, dont <strong>DataPassport</strong>, 
+                une solution sécurisée pour vérifier l’âge et les informations personnelles de manière simplifiée et fiable.
+            </p>
+
+            <a href="#projets" class="btn">Découvrir en quelques mots</a>
+
+            <p>
+                DataPassport est un wallet numérique innovant qui permet de valider l’âge
+                et d’autres informations personnelles de manière sécurisée et fiable.
+            </p>
+
+            <br>
+
+            <!-- ✅ PDF OUVERT DANS UN NOUVEL ONGLET -->
+            <a href="DataPassport.pdf" target="_blank" class="btn">
+                Télécharger le PDF – DataPassport
+            </a>
+
+        </div>
+    </header>
+
+    <section id="projets">
+        <div class="container">
+            <h2>Mon Projet : DataPassport</h2>
+            <p>
+                DataPassport est un wallet numérique qui permet de valider l’âge et d’autres informations personnelles 
+                de manière sécurisée, simple et rapide.
+            </p>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>LegalTech</h3>
+                    <p>Offrir aux utilisateurs un contrôle absolu sur leurs données, afin qu’aucune information sensible ne soit exposée ou vendues sans leur consentement.</p>
+                </div>
+                <div class="feature">
+                    <h3>Le Projet</h3>
+                    <p>Un wallet numérique qui permet de prouver son identité ou son âge sans jamais exposer ses données sensibles. En bref, prouver ce qui est nécessaire, sans partager ce qui ne l’est pas.</p>
+                </div>
+                <div class="feature">
+                    <h3>Ce que je cherche</h3>
+                    <p>Un CTO visionnaire pour concrétiser la dimension technique du projet. Un mentor / associé stratégique, capable de partager son expertise et son réseau pour accélérer le développement et l’impact de DataPassport.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 – Nettour Samy | DataPassport – Tous droits réservés
+    </footer>
+</body>
+</html>
